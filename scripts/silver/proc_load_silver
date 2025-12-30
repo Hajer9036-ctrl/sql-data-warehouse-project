@@ -49,8 +49,8 @@ BEGIN
 		SELECT
 			cust_id,
 			cust_key,
-			TRIM(cust_firstname) AS cst_firstname,
-			TRIM(cust_lastname) AS cst_lastname,
+			TRIM(cust_firstname) AS cust_firstname,
+			TRIM(cust_lastname) AS cust_lastname,
 			CASE 
 				WHEN UPPER(TRIM(cust_matrial_status)) = 'S' THEN 'Single'
 				WHEN UPPER(TRIM(cust_matrial_status)) = 'M' THEN 'Married'
